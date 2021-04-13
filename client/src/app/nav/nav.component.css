@@ -2,8 +2,12 @@
     cursor: pointer;
 }
 
-img{
+.profilePic{
     max-height: 50px;
     border: 2px solid #fff;
     display: inline;
+}
+
+.logo{
+    max-height: 45px;
 }
