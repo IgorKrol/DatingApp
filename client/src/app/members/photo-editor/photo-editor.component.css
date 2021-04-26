@@ -8,6 +8,21 @@ img.img-thumbnail {
     border: dotted 3px red;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: red;
+  }
+  
+
 input[type=file]{
     color: transparent;
 }

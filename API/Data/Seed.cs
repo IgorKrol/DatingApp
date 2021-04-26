@@ -38,12 +38,17 @@ namespace API.Data
 
                 await userManager.CreateAsync(user, "Pa$$w0rd");
                 await userManager.AddToRoleAsync(user, "Member");
+
+                foreach (var photo in user.Photos)
+                {
+                    photo.isApproved = true;
+                }
             }
 
             var admin = new AppUser{
                 UserName = "admin"
             };
-
+            System.Console.WriteLine("aaaa");
             await userManager.CreateAsync(admin, "Pa$$w0rd"); 
             await userManager.AddToRolesAsync(admin, new[] {"Admin", "Moderator"});
         }
